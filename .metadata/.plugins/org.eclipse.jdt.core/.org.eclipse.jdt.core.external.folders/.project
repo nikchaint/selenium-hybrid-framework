@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>C:/Users/nikhi/Dropbox/My PC (LAPTOP-VHEBP6NB)/Downloads/eclipse-java-2023-06-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/659/0/.cp</location>
+		</link>
+	</linkedResources>
+</projectDescription>
