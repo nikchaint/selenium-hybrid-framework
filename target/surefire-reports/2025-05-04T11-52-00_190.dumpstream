@@ -1,0 +1,5 @@
+# Created at 2025-05-04T11:52:00.339
+Boot Manifest-JAR contains absolute paths in classpath 'E:\SELENIUM WEBDRIVER TUTORIALS\CICD_GIT_Jenkins\Selenium_Hybrid_Framework_Design\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

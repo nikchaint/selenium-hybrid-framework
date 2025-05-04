@@ -41,7 +41,7 @@ public class BaseTest {
 		String browserName =  System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		
 		
-		if(browserName.contains("Chrome")) {
+		if(browserName.contains("headless")) {
 			ChromeOptions options = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			
@@ -50,6 +50,10 @@ public class BaseTest {
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension (1440, 900)); // set standard dimensions for the screen
 			
+		} else if(browserName.contains("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			driver.manage().window().setSize(new Dimension (1440, 900)); // set standard dimensions for the screen
 		} else if(browserName.equals("Edge")) {
 			driver = new EdgeDriver();	
 		} else if(browserName.equals("Firefox")) {

@@ -22,7 +22,7 @@ public class SubmitOrderTest extends BaseTest {
 	String userName = "nikhil1997@gmail.com";
 	String password = "!123weSDF";
 
-	@Test (groups = {"E2E Testing"}, dataProvider = "getData", retryAnalyzer = Retry_FlackyTests.class)
+	@Test (groups = {"E2E Testing"}, dataProvider = "getData")
 	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		
@@ -78,7 +78,7 @@ public class SubmitOrderTest extends BaseTest {
 			
 	}
 	
-	@Test (dependsOnMethods = {"submitOrder"})
+	@Test (dependsOnMethods = {"submitOrder"}, retryAnalyzer = Retry_FlackyTests.class)
 	public void MyOrders() throws IOException {
 		//LoginPage loginPage = lounchApplication();
 		ProductCatalogue productCatelogue = loginPage.loginApplication(userName, password);

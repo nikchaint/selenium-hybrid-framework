@@ -1,17 +1,20 @@
 package Learnings.PageObjects;
 
 import java.util.List;
+
+import Learnings.AbstractComponents.AbstractComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CartPage {
+public class CartPage extends AbstractComponent {
 	WebDriver driver;
 	
 	public CartPage(WebDriver driver) {
 		//initialization
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -26,6 +29,7 @@ public class CartPage {
 	}
 	
 	public boolean validateTheItemAvailabilityInCart(String productName) {
+		waitUntilElementAppears(buyNowButton);
 		return getTheListoItemFromCart().stream().anyMatch(itemInCart -> itemInCart.findElement(By.xpath(".//h3")).getText()
 				.equals(productName));
 	}

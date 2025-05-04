@@ -21,7 +21,7 @@ public class PaymentAndPlaceOrderPage extends AbstractComponent {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[text()='Place Order ']")
+	@FindBy(xpath = "//a[contains(text(),'Place Order')]")
 	WebElement placeOrderButton;
 	
 	@FindBy(css = "input[value*='4542 9931 9292 2293']")
@@ -64,10 +64,11 @@ public class PaymentAndPlaceOrderPage extends AbstractComponent {
 	By couponConfirmationMessageBy = By.cssSelector(".mt-1.ng-star-inserted");
 	By countryDropDownBy = By.cssSelector("span[class*='ng-star-inserted']");
 	By successfulOrderPlacedMesssageBy = By.cssSelector("h1[class*='hero-primary']");
+	By placeOrderButtonBy = By.xpath("//a[contains(text(),'Place Order')]");
 
-	
 	public void personalInformation(long cardnumber, int expirymonth, int expiryyear, String cvvcode, String cardholderName) {
-		
+
+		waitUntilElementAppears(placeOrderButtonBy);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		//scroll at the bottom of the page

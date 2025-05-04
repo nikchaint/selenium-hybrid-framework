@@ -20,7 +20,7 @@
       <class name="Learnings.Tests.SubmitOrderTest">
         <methods>
           <include name="lounchApplication"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="submitOrder"/>
           <include name="tearDown"/>
           <include name="MyOrders"/>
         </methods>

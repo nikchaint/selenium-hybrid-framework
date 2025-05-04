@@ -1,6 +1,8 @@
 package Learnings.PageObjects;
 
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +22,12 @@ public class OrderPage extends AbstractComponent {
 	
 	@FindBy(css = "tr td:nth-child(3)")
 	List<WebElement> productsInOrderPage;
+
+	By myOrderPageTitleBy = By.xpath("//h1[contains(text(),'Your Orders')]");
 	
 	public boolean ProductInOrderPageValidation(String productName) {
-		return productsInOrderPage.stream().anyMatch(s -> s.getText().equalsIgnoreCase(productName));	
+		waitUntilElementAppears(myOrderPageTitleBy);
+		boolean result = productsInOrderPage.stream().anyMatch(s -> s.getText().equalsIgnoreCase(productName));
+		return result;
 	}
 }

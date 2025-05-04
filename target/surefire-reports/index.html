@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\SELENIUM WEBDRIVER TUTORIALS\Selenium_Learning\Selenium_Hybrid_Framework_Design\testSuites\testng_Listener.xml</span>
+                    <span>E:\SELENIUM WEBDRIVER TUTORIALS\CICD_GIT_Jenkins\Selenium_Hybrid_Framework_Design\testSuites\testng_Listener.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,  2 skipped,  2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,  1 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,29 +103,15 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.ErrorValidations" class="method navigator-link" hash-for-method="productValidationCheck">productValidationCheck</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="MyOrders">MyOrders</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})">submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.ErrorValidations" class="method navigator-link" hash-for-method="productValidationCheck">productValidationCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="MyOrders">MyOrders</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -158,6 +144,11 @@
                         <a href="#" panel-name="suite-Suite" title="Learnings.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({passWord=#345rtFGH, userName=mayur1995@gmail.com, productName=IPHONE 13 PRO})">submitOrder({passWord=#345rtFGH, userName=mayur1995@gmail.com, productName=IPHONE 13 PRO})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Learnings.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})">submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -182,7 +173,7 @@
                   </a> <!-- productValidationCheck -->
                   <span class="method-name">productValidationCheck</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at Learnings.Tests.ErrorValidations.productValidationCheck(ErrorValidations.java:33)
+	at Learnings.Tests.ErrorValidations.productValidationCheck(ErrorValidations.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -198,12 +189,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})">
-                  </a> <!-- submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL}) -->
-                  <span class="method-name">submitOrder</span>
-                  <span class="parameters">({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                  <a name="MyOrders">
+                  </a> <!-- MyOrders -->
+                  <span class="method-name">MyOrders</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at Learnings.Tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:66)
+	at Learnings.Tests.SubmitOrderTest.MyOrders(SubmitOrderTest.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -223,29 +213,9 @@
                   </a> <!-- productValidationCheck -->
                   <span class="method-name">productValidationCheck</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at Learnings.Tests.ErrorValidations.productValidationCheck(ErrorValidations.java:33)
+	at Learnings.Tests.ErrorValidations.productValidationCheck(ErrorValidations.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">Learnings.Tests.SubmitOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MyOrders">
-                  </a> <!-- MyOrders -->
-                  <span class="method-name">MyOrders</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Learnings.Tests.SubmitOrderTest.MyOrders() on instance Learnings.Tests.SubmitOrderTest@60f00693 depends on not successfully finished methods 
-[Learnings.Tests.SubmitOrderTest.submitOrder() on instance Learnings.Tests.SubmitOrderTest@60f00693]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -280,12 +250,20 @@
                   <span class="parameters">({passWord=#345rtFGH, userName=mayur1995@gmail.com, productName=IPHONE 13 PRO})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})">
+                  </a> <!-- submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\SELENIUM WEBDRIVER TUTORIALS\Selenium_Learning\Selenium_Hybrid_Framework_Design\testSuites\testng_Listener.xml</span>
+            <span class="header-content">E:\SELENIUM WEBDRIVER TUTORIALS\CICD_GIT_Jenkins\Selenium_Hybrid_Framework_Design\testSuites\testng_Listener.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -357,32 +335,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'Learnings.Tests.SubmitOrderTest')
-data.setCell(0, 3, 8466);
+data.setCell(0, 3, 14024);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'productValidationCheck')
-data.setCell(1, 2, 'Learnings.Tests.ErrorValidations')
-data.setCell(1, 3, 4304);
+data.setCell(1, 1, 'submitOrder')
+data.setCell(1, 2, 'Learnings.Tests.SubmitOrderTest')
+data.setCell(1, 3, 11028);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ErrorValidationsTest')
+data.setCell(2, 1, 'productValidationCheck')
 data.setCell(2, 2, 'Learnings.Tests.ErrorValidations')
-data.setCell(2, 3, 2629);
+data.setCell(2, 3, 4379);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'submitOrder')
-data.setCell(3, 2, 'Learnings.Tests.SubmitOrderTest')
-data.setCell(3, 3, 2577);
+data.setCell(3, 1, 'productValidationCheck')
+data.setCell(3, 2, 'Learnings.Tests.ErrorValidations')
+data.setCell(3, 3, 3499);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'productValidationCheck')
-data.setCell(4, 2, 'Learnings.Tests.ErrorValidations')
-data.setCell(4, 3, 2530);
+data.setCell(4, 1, 'MyOrders')
+data.setCell(4, 2, 'Learnings.Tests.SubmitOrderTest')
+data.setCell(4, 3, 1290);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'MyOrders')
-data.setCell(5, 2, 'Learnings.Tests.SubmitOrderTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'ErrorValidationsTest')
+data.setCell(5, 2, 'Learnings.Tests.ErrorValidations')
+data.setCell(5, 3, 1288);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -415,71 +393,79 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ErrorValidationsTest</span>
-                <span class="method-start">4978 ms</span>
+                <span class="method-start">5148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7617 ms</span>
+                <span class="method-start">6436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">lounchApplication</span>
-                <span class="method-start">7852 ms</span>
+                <span class="method-start">6654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productValidationCheck</span>
-                <span class="method-start">9407 ms</span>
+                <span class="method-start">8580 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13711 ms</span>
+                <span class="method-start">12963 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">lounchApplication</span>
-                <span class="method-start">13821 ms</span>
+                <span class="method-start">13148 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">productValidationCheck</span>
-                <span class="method-start">16668 ms</span>
+                <span class="method-start">19294 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20262 ms</span>
+                <span class="method-start">23076 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Learnings.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">lounchApplication</span>
-                <span class="method-start">21279 ms</span>
+                <span class="method-start">24215 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                <span class="method-start">28708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39737 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">lounchApplication</span>
+                <span class="method-start">40004 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({passWord=#345rtFGH, userName=mayur1995@gmail.com, productName=IPHONE 13 PRO})</span>
+                <span class="method-start">43767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">57792 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">lounchApplication</span>
+                <span class="method-start">57990 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">submitOrder({passWord=!123weSDF, userName=nikhil1997@gmail.com, productName=ADIDAS ORIGINAL})</span>
-                <span class="method-start">25015 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">28642 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">lounchApplication</span>
-                <span class="method-start">28715 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">submitOrder({passWord=#345rtFGH, userName=mayur1995@gmail.com, productName=IPHONE 13 PRO})</span>
-                <span class="method-start">31416 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">39882 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
                 <span class="method-name">MyOrders</span>
-                <span class="method-start">39994 ms</span>
+                <span class="method-start">62300 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63810 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
