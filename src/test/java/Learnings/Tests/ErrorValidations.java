@@ -2,7 +2,6 @@ package Learnings.Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import Learnings.PageObjects.CartPage;
 import Learnings.PageObjects.ProductCatalogue;
 import Learnings.TestComponents.BaseTest;

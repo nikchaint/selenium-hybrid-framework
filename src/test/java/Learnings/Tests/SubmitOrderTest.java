@@ -1,21 +1,14 @@
 package Learnings.Tests;
 
 import Learnings.TestComponents.Retry_FlackyTests;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import Learnings.PageObjects.CartPage;
-import Learnings.PageObjects.LoginPage;
 import Learnings.PageObjects.OrderPage;
 import Learnings.PageObjects.PaymentAndPlaceOrderPage;
 import Learnings.PageObjects.ProductCatalogue;
 import Learnings.TestComponents.BaseTest;
-import org.openqa.selenium.TakesScreenshot;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;

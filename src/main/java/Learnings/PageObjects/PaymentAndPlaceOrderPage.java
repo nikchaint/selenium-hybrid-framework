@@ -2,7 +2,6 @@ package Learnings.PageObjects;
 
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import Learnings.AbstractComponents.AbstractComponent;
 
 public class PaymentAndPlaceOrderPage extends AbstractComponent {
@@ -72,7 +70,7 @@ public class PaymentAndPlaceOrderPage extends AbstractComponent {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
-		//scroll at the buttom of the page
+		//scroll at the bottom of the page
 		//js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		
 		//scrolls the page so the element appears at the bottom of the viewport.
@@ -102,7 +100,8 @@ public class PaymentAndPlaceOrderPage extends AbstractComponent {
 		waitUntilElementAppears(countryDropDownBy);
 
 		WebElement element = selectCountryDropDownElements.stream().filter(s -> s.getText().equals(counteyname)).findFirst().orElse(null);
-		element.click();
+        assert element != null;
+        element.click();
 	}
 	
 	public String applyCouponCode(String coupencode) {
@@ -117,14 +116,9 @@ public class PaymentAndPlaceOrderPage extends AbstractComponent {
 	}
 	
 	public String placeOrder() {
-		
 		placeOrderButton.click();
-		
 		waitUntilElementAppears(successfulOrderPlacedMesssageBy);
-		
-		String orderSuccess = successfulOrderPlacedMesssage.getText();
-		return orderSuccess;
-		
+		return successfulOrderPlacedMesssage.getText();
 	}
 	
 	public void ExportOrderDetails() {
